@@ -19,7 +19,8 @@ const resolve = {
 module.exports = {
     resolve: resolve,
     entry: {
-        site: SOURCE_ROOT + '/site/main.ts'
+        site: SOURCE_ROOT + '/site/main.ts',
+        author: SOURCE_ROOT + '/author/main.ts',
     },
     output: {
         filename: (chunkData) => {
@@ -87,7 +88,8 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './clientlib-site/' }
+                { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './clientlib-site/' },
+                { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './clientlib-author/' }
             ]
         })
     ],
