@@ -7,5 +7,5 @@
     cq:icon = "abc"
     jcr:description ="Page and section heading"
     sling:resourceSuperType="core/wcm/components/title/v3/title"
-    componentGroup="AEM Gia project - Content">
+    componentGroup="Gia Sites Project - Content">
 </jcr:root>
