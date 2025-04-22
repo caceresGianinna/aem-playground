@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/gia-test" mode="merge"/>
+    <filter root="/content/gia-test" mode="merge"/>
+    <filter root="/content/dam/gia-test" mode="merge">
+        <exclude pattern="/content/dam/gia-test(/.*)?"/>
+        <include pattern="/content/dam/gia-test/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/gia-test/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/gia-test" mode="merge"/>
+</workspaceFilter>

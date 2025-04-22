@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/gia-test",
+        "create path (nt:unstructured) /content/dam/gia-test/jcr:content",
+        "set properties on /content/dam/gia-test/jcr:content\n  set cq:conf{String} to /conf/gia-test\n  set jcr:title{String} to \"Gia Sites Project\"\nend"
+    ]
+}
