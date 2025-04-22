@@ -1,9 +1,16 @@
 
 //== Font
 
-$font-family:           "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size:             16px;
+$font-family:                   "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-headline-font-family:     "Gill Sans", sans-serif;         
+$font-size:                  16px;
 $font-height:           1.5;
+
+// Typography 
+$font-headline-size--sm: 18px;
+$font-headline-size--md: 30px;
+$font-headline-size--lg: 42px;
+
 
 //== Color
 
@@ -11,6 +18,7 @@ $font-height:           1.5;
 $color-foreground:      #202020;
 $color-background:      #ECECEC;
 $color-link:            #2020E0;
+$color-accent:  #058743;
 
 // Dark mode
 $color-foreground-dark: invert($color-foreground);
