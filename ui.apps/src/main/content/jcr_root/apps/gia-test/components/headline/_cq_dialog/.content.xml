@@ -3,7 +3,6 @@
     xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured"
     jcr:title="Headline settings" sling:resourceType="cq/gui/components/authoring/dialog"
-    mode="edit" 
     extraClientlibs="[aem-gia-project.author]"
     helpPath="style-guide.html#headline">
     <content

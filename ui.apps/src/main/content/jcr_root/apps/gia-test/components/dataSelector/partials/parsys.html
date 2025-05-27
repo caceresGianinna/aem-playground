@@ -1,0 +1,9 @@
+<template data-sly-template.parsys="${ @ model}">
+    <sly data-sly-use.container="com.adobe.cq.wcm.core.components.models.Container"></sly>
+    <sly
+      data-sly-repeat="${container.items}"
+      data-sly-resource="${item.path @ decoration=true}"></sly>
+    <sly
+      data-sly-test="${!wcmmode.disabled}"
+      data-sly-resource="${resource.path @ resourceType='core/wcm/components/container/v1/container/new', appendPath='/*', decorationTagName='div', cssClassName='new section'}" />
+  </template>

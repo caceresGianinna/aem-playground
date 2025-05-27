@@ -1,6 +1,7 @@
 
 <!-- Models -->
 <sly data-sly-use.model="com.adobe.aem.gia.project.core.models.Headline"
+    data-sly-use.data="com.adobe.aem.gia.project.core.models.DataSelector"
     data-sly-use.template="core/wcm/components/commons/v1/templates.html"></sly>
 
 <!-- Constants-->
@@ -8,7 +9,10 @@
 
 <!-- Component -->
 <div class="cmp-headline"  data-sly-test="${!isEmpty}" data-cmp-is="headline" id="${id}">
+    <p class="cmp-headline__eyebrow">This is the eyebrow</p>
+    <p>${data.message}</p>
     <h1 class="cmp-headline__text" data-sly-element="${model.type}"> ${model.title}</h1>
+
 </div>
 
 <sly data-sly-call="${template.placeholder @ isEmpty=isEmpty, classAppend='cmp-headline'}"></sly>
