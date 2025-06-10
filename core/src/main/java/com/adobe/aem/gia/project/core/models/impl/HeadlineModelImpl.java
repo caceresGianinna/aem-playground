@@ -4,6 +4,7 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import com.adobe.aem.gia.project.core.models.Headline;
@@ -13,6 +14,9 @@ import com.adobe.xfa.ut.StringUtils;
         Resource.class }, adapters = Headline.class, resourceType = HeadlineModelImpl.RESOURCE_TYPE, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class HeadlineModelImpl implements Headline {
     static final String RESOURCE_TYPE = "aem-gia-project/components/headline";
+
+    @Self
+    private SlingHttpServletRequest request;
 
     @ValueMapValue()
     private String title;
@@ -40,6 +44,10 @@ public class HeadlineModelImpl implements Headline {
     @Override
     public String getType() {
         return type;
+    }
+
+    public String getMessage() {
+        return (String) request.getAttribute("message");
     }
 
 }

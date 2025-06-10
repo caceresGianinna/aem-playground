@@ -32,4 +32,8 @@ public interface Headline   {
      */
     public String getType() throws IllegalStateException;
 
+    
+    public String getMessage() throws IllegalStateException;
+
+    
 }
