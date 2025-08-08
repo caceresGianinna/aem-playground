@@ -53,6 +53,13 @@
       
   </modules>
       
+  <scm>
+    <connection>scm:git@github.com:caceresGianinna/aem-playground.git</connection>
+    <developerConnection>scm:git@github.com:caceresGianinna/aem-playground.git</developerConnection>
+    <url>https://github.com/caceresGianinna/aem-playground</url>
+    <tag>HEAD</tag> <!-- This will be updated by the release plugin -->
+  </scm>
+
   <properties>
             
     <aem.host>localhost</aem.host>
