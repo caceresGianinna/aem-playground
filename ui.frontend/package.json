@@ -1,7 +1,7 @@
 {
-  "name": "aem-maven-archetype",
-  "version": "1.0.0",
-  "description": "Generates an AEM Frontend project with Webpack",
+  "name": "aem-playground",
+  "version": "0.1.0",
+  "description": "AEM playground project to test and learn",
   "repository": {
     "type": "git",
     "url": ""
@@ -16,12 +16,14 @@
     "sync": "aemsync -d -p ../ui.apps/src/main/content",
     "chokidar": "chokidar -c \"clientlib\" ./dist",
     "aemsyncro": "aemsync -w ../ui.apps/src/main/content",
-    "watch": "npm-run-all --parallel start chokidar aemsyncro"
+    "watch": "npm-run-all --parallel start chokidar aemsyncro",
+    "release": "release-it"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@release-it/conventional-changelog": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "acorn": "^6.1.0",
@@ -42,6 +44,7 @@
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.2.15",
     "postcss-loader": "^3.0.0",
+    "release-it": "^19.0.5",
     "sass": "^1.45.0",
     "sass-loader": "^12.4.0",
     "source-map-loader": "^0.2.4",
@@ -55,7 +58,6 @@
     "webpack-dev-server": "^4.6.0",
     "webpack-merge": "^5.8.0"
   },
-  "dependencies": {},
   "browserslist": [
     "last 2 version",
     "> 1%"

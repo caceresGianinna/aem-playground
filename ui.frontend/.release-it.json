@@ -1,0 +1,24 @@
+{
+  "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+  "git": {
+    "tagName": "v${version}",
+    "commitMessage": "chore: release v${version}",
+    "push": false
+  },
+  "npm": {
+    "publish": false
+  },
+  "hooks": {
+    "after:bump":" cd .. && git add CHANGELOG.md"
+  },
+  "github": {
+    "release": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "conventionalcommits",
+      "infile": "../CHANGELOG.md"
+    }
+  }
+}
+
