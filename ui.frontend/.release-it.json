@@ -8,13 +8,16 @@
   "npm": {
     "publish": false
   },
+  "hooks": {
+    "after:bump":" cd .. && git add CHANGELOG.md"
+  },
   "github": {
-    "release": true
+    "release": false
   },
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": "conventionalcommits",
-      "infile": "CHANGELOG.md"
+      "infile": "../CHANGELOG.md"
     }
   }
 }
