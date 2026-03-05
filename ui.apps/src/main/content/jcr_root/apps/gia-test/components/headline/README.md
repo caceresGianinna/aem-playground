@@ -1,6 +1,8 @@
-# Headline component 
+# Headline component
 
-Extends the Title Core component 
+Extends the Title Core component
+
+-- TITLE CORE COMPONENT
 
 ## Configuration
 
@@ -19,16 +21,14 @@ The headline component accepts the following styles settings:
 
 ### Heading size
 
-| Style name  | Class name   | 
-|-------------|--------------|
-| SM  |   heading--sm  |   
-| MD  |   heading--md |   
-| LG  |   heading--lg |   
-
+| Style name | Class name  |
+| ---------- | ----------- |
+| SM         | heading--sm |
+| MD         | heading--md |
+| LG         | heading--lg |
 
 ### Accent
 
-| Style name  | Class name   | 
-|-------------|--------------|
-| Accent      | heading--accent|   
-
+| Style name | Class name      |
+| ---------- | --------------- |
+| Accent     | heading--accent |
