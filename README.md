@@ -2,6 +2,10 @@
 
 Project to practice, learn and test AEM, tooling and UI.
 
+- Changelog generation 
+- Branching strategy for AEMaaCS projects 
+- Releases with tags 
+
 ## Modules
 
 The main parts of the template are:
